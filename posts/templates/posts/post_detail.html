@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block content %}
+
+<head>
+  <link rel="stylesheet" href="{% static 'css/detail.css' %}">
+</head>
+
+<div id="edit" class="container">
+  <article class="media content-section">
+    <img class="rounded-circle article-img" src="{{ object.author.profile.image.url }}" alt="">
+    <div class="media-body">
+      <div class="article-metadata">
+        <a class="mr-2" href="#">{{ object.author }}</a>
+        <small class="text-muted">{{ object.date_posted|date:'M d, Y' }}</small>
+        {% if object.author == user %}
+        <div class="">
+          <a id="updatedetail" class="btn btn-sm mt-1 mb-1" href="{% url 'post-update' object.id %}">Update</a>
+          <a id="deldetail" class="btn btn-sm mt-1 mb-1" href="{% url 'post-delete' object.id %}">Delete</a>
+          </div>
+        {% endif %}
+      </div>
+      <h2 class="article-title">{{ object.title }}</h2>
+      <p class="article-content">{{ object.content }}</p>
+    </div>
+  </article>
+</div>
+
+{% endblock %}

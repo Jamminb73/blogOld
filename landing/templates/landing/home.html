@@ -1,0 +1,82 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+{% block content %}
+
+<header id="showcase">
+
+  <div class="dark-overlay">
+    <div class="row">
+      <div class="col-lg-4 ">
+        <div class="card text-center card-form">
+          <div class="card-body pt-5">
+            {% include "partials/_alerts.html" %}
+            <h1>Recent Posts</h1>
+            {% for posts in post_list %}
+            <a href="{% url 'main' %}">
+              <h3>{{ posts.title }}</h3>
+            </a>
+            <hr>
+            {% endfor %}
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-8 d-none d-lg-block">
+        <div class="container">
+          <h1 class="text-center intro">Django Blog</h1>
+          <p>I have been trying to learn Django for about 18 months now. More precisely I was sold on
+            The idea that I would be rich and famous if I learned full stack web development.
+            So I have been learning HTML 5, CSS3, Bootstrap to make it all easier. Some JavaScript
+            and I have personally focused on Django as my backend. This is not because I'm completely
+            sold on Django, mostly it is because the same person who gave the impression that I would be rich
+            and famous was very sold on Python as a whole. Therefore that is the path he pointed me toward.
+            I am not trying to say anything negative about Python I rather enjoy it, but I also speak from Ignorance as
+            Djano is really the only framework I have successfully learned about. I have looked at some of the
+            JavaScript
+            Options like Node and React and such. At some point I would like to learn more about them, as I'm sure you
+            all aware,
+            there are just not enough hours in the day, I have not made it all that far in my journey considering the
+            months I have dumped into this. So most of what I would like to discuss here is about Django and maybe
+            vanilla JS to help spice things up on top of Html and css.</p>
+
+          <p>I hope that as time marches on I am able to really get a grasp of Django, and in the process help other
+            people find
+            as much of an interest as I have in web development. I really have enjoyed doing this to the point where I
+            don't need
+            other forms of entertainment. I hope that is not text book obsession, but it really could be. The scary
+            thing is, I
+            Have a pretty good idea what I want to do as I'm building this but there are still huge doubts about this so
+            as I try to get
+            the blog working and such I'm a little nervous. Wish me luck! </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+</header>
+
+<div id="sponsors">
+  <div class="row">
+    <div class="container text-center">
+      <h1>Now a word from our sponsors</h1>
+    </div>
+  </div>
+</div>
+<section id="recent">
+  <div class="container-fluid">
+    <div class="row">
+
+
+      <div id="image" class="ml-auto col-md-8 col-sm-4 image-fluid container">
+      </div>
+
+    </div>
+  </div>
+</section>
+
+{% endblock %}

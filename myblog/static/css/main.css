@@ -1,0 +1,111 @@
+body {
+  background: #333;
+  color: #f4f4f4;
+}
+
+.navbar {
+  border-bottom: #93cb52 3px solid;
+  opacity: 0.8;
+  z-index: 2;
+}
+
+.text-primary {
+    color: #93cb52 !important;
+}
+
+#showcase {
+  background: url(../img/javascript.jpg) no-repeat center center/cover;
+  position: relative;
+  min-height: 575px;
+  color: #fff;
+  opacity: 0.65;
+  z-index: 1;
+}
+
+#showcase .dark-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 575px;
+  background: rgba(0,0,0,0.8);
+}
+#showcase .row{
+  padding-top: 100px;
+  margin: 0 2rem 2rem 2rem;
+}
+
+.card {
+  width: 350px;
+  margin-left: 1.5rem;
+}
+
+.card a {
+  text-decoration: none;  
+}
+
+.card-body {
+  background: #93cb52;
+  color: #f4f4f4;
+}
+
+.card .card-body h3 {
+  color: #f4f4f4;
+
+}
+
+#recent {
+  /* display: flex; */
+}
+#recent #title {
+  text-align: center;
+}
+
+
+
+#recent .posts {
+  background: #333;
+  color: #93cb52;
+  /* flex: 1; */
+}
+
+#recent .posts a {
+  text-decoration: none;
+  color: #93cb52;
+}
+
+#recent .posts .post {
+  border: #f4f4f4 groove 8px;
+  margin: 0.5rem;
+  padding: 1rem;
+}
+
+#recent .posts .post h3 {
+  padding-left: 3rem;
+  text-decoration: none;
+}
+
+#recent #image {
+  background: url('https://source.unsplash.com/1600x900/?nature,water')
+  no-repeat center center/cover;
+  opacity: 0.85;
+  height: 400px;
+  margin: 60px auto;
+
+
+
+  /* flex: 1; */
+}
+
+#sponsors {
+  min-height: 300px;
+  background: #f4f4f4;
+  color: #333;
+  align-items: center;
+
+}
+
+#sponsors .container {
+  margin-top: 125px;
+
+}

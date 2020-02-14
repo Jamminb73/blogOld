@@ -1,0 +1,28 @@
+body {
+  background: #333;
+}
+
+#delform legend,
+#delform h2 {
+  color: #fff;
+}
+
+#delform {
+  color: #93cb52;
+  border: #93cb52 solid 1px;
+  border-radius: 5px;
+  padding: 1rem 2rem;
+}
+
+#delete {
+  color: #e2a006;
+  border: #e2a006 solid 1px;
+  border-radius: 5px;
+  
+}
+
+#cancel {
+  color: #93cb52;
+  border: #93cb52 solid 1px;
+  border-radius: 5px;
+}

@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block content %}
+
+<link rel="stylesheet" href="{% static 'css/delete.css' %}">
+<div class="content-section container py-5 mt-5">
+  <form id="delform" method="POST">
+    {% csrf_token %}
+    <fieldset class="form-group">
+      <legend class="mb-4">Delete Post</legend>
+
+      <h2>Are you sure you want to delete the post "{{ object.title }}"</h2>
+    </fieldset>
+    <div class="form-group">
+      <button id="delete" class="btn" type="submit">Yes, Delete</button>
+      <a id="cancel" class="btn" href="{% url 'post-detail' object.id %}">Cancel</a>
+    </div>
+  </form>
+
+
+</div>
+
+{% endblock %}

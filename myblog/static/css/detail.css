@@ -1,0 +1,32 @@
+a {
+  text-decoration: none !important;
+  color: #e2a006;
+}
+
+#edit h2 {
+  color: #93cb52;
+}
+
+#edit article {
+  padding-top: 3rem;
+  margin-top: 5rem;
+}
+
+#edit .media-body {
+  border: #93cb52 solid 1px;
+  padding: 2rem 1rem;
+}
+
+#deldetail {
+    background: #e2a006;
+    opacity: 0.9;
+    color: #fff;
+    border-radius: 5px;
+}
+
+#updatedetail {
+  color: #fff;
+  background: #93cb52;
+  opacity: 0.9;
+  border-radius: 5px;  
+}

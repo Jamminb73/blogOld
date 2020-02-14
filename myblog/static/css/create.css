@@ -1,0 +1,29 @@
+.btn  {
+  color: #93cb52;
+  border: #93cb52 solid 1px;
+  border-radius: 5px;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+}
+#box {
+  padding: 0 0 1rem 1.5rem;
+  margin-top: 5.5rem;
+  border: #93cb52 solid 2px;
+  width: 435px;
+  height: 540px;
+  color: #e2a006;
+}
+
+.controls {
+  margin-bottom: 1rem;
+}

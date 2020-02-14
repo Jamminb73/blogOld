@@ -1,0 +1,9 @@
+#register .card-header {
+  background: #93cb52;
+}
+
+#reg-btn {
+  background: #fff;
+  color: #93cb52;
+  border: #93cb52 solid 2px;
+}
